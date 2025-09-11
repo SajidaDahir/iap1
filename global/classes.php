@@ -1,6 +1,6 @@
 <?php
 //create a class Hello World
-class HelloWorld {
+class classes {
     public function greet(){
         return "<h1>Hello, ICS Community!</h1>";
 
@@ -10,12 +10,4 @@ class HelloWorld {
     }
 }
 
-//create  instance of Helloworld
-$hello = new HelloWorld();
-
-//call the greet method
-print $hello->greet();
-
-//call the today method
-print $hello->today();
 ?>
