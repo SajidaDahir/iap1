@@ -13,4 +13,12 @@ $conf['db_name'] = 'nol';
 
 // Site Language
 $conf['site_lang'] = 'en';
+
+// Email Configuration
+$conf['mail_type'] = 'smtp'; // Options: 'smtp' or 'mail';
+$conf['smtp_host'] = 'smtp.gmail.com';
+$conf['smtp_port'] = '465';
+$conf['smtp_user'] = 'sajida.sheikh@strathmore.edu';
+$conf['smtp_pass'] = 'rkzs tpfz hgbl dzul';
+$conf['smtp_secure'] = 'ssl'; // Options: 'ssl' or 'tls
 ?> 
