@@ -20,7 +20,7 @@ try {
     $mail->Host       = $conf['smtp_host'];                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'sajida.sheikh@strathmore.edu';                     //SMTP username
-    $mail->Password   = 'rkzs tpfz hgbl dzul';                               //SMTP password
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = $conf['smtp_port'];                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
