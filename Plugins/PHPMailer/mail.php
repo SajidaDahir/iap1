@@ -8,24 +8,23 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
 require 'vendor/autoload.php';
 
+    // Create an instance; passing `true` enables exceptions
+    $mail = new PHPMailer(true);
 
-//Create an instance; passing `true` enables exceptions
-$mail = new PHPMailer(true);
-
-try {
+    try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'sajida.sheikh@strathmore.edu';                     //SMTP username
-    $mail->Password   = 'rkzs tpfz hgbl dzul';                               //SMTP password
+    $mail->Password   = 'dsvb amcn cwwg lber';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('sajida.sheikh@strathmore.edu', 'Sajida Dahir');
-    $mail->addAddress('swalha.ahmed@strathmore.edu', 'Swalha Ahmed');     //Add a recipient
+    $mail->addAddress('sajidadahirsheikh@gmail.com', 'Sajida Sheikh');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -38,13 +37,15 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'WELCOME TO ICS 2.2';
-    $mail->Body    = 'Hello and welcome.<b>This is a new semester</b>';
+    $mail->Body    = 'Hello, Welcome tour application!';
 
-    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
 ?>

@@ -20,6 +20,12 @@ class forms {
 <?php
     } 
 
+    private function submit_btn($value,$name) {
+        ?>
+        <button type="submit" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
+        <?php
+    }
+
 
     public function login() {
         ?>
