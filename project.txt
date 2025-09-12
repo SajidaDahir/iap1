@@ -1,0 +1,37 @@
+GIT WORKFLOW FOR ICS PROJECT
+
+1. INITIAL SETUP
+- git init
+- git branch -M main
+- git add .
+- git commit -m "Initial commit"
+- git remote add origin https://github.com/SajidaDahir/iap1.git
+- git push -u origin main
+
+
+2. DAILY WORKFLOW
+- git pull origin main
+
+
+3. MAKING CHANGES
+- git add filename.php          # Add specific file
+- git add .                     # Add all changes
+- git commit -m "message"
+
+
+4. PUSHING CHANGES
+- git push origin feature-name
+
+
+5. MERGING TO MAIN
+- git checkout main
+- git merge feature-name
+- git push origin main
+
+
+6. VIEW STATUS
+- git status
+
+
+7. IF MISTAKES HAPPEN
+- git reset --hard HEAD              # Reset all to last commit

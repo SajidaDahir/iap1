@@ -9,7 +9,7 @@ $conf['db_type'] = 'pdo';
 $conf['db_host'] = 'localhost';
 $conf['db_user'] = 'root';
 $conf['db_pass'] = 'saju';
-$conf['db_name'] = 'iap1';
+$conf['db_name'] = 'trial';
 
 // Site Language
 $conf['site_lang'] = 'en';
