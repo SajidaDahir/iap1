@@ -38,6 +38,7 @@ class forms {
             <br><br>
             <input type="submit" value="Log In"> <a href="./">Don't have an account? Sign up</a>
         </form>
+        
         <?php
     }
 }
