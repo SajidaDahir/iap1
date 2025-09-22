@@ -10,7 +10,7 @@ spl_autoload_register(function ($className) use ($directories) {
     foreach ($directories as $directory) {
         $filePath = __DIR__ . "/$directory/" . $className . '.php';
         if (file_exists($filePath)) {
-            require_once $filePath;
+            require_once $filePa4th;
             return;
         }
     }
@@ -18,5 +18,5 @@ spl_autoload_register(function ($className) use ($directories) {
 
 // create global instances
 $ObjSendMail = new sendMail();
-$form = new forms();
-$layout = new layout();
+$ObjForm = new forms();
+$ObjLayout = new layout();

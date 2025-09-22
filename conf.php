@@ -1,6 +1,6 @@
 <?php
 // Site Information
-$conf['site_name'] = 'ICS C Community';
+$conf['site_name'] = 'Task Application';
 $conf['site_url'] = 'http://localhost';
 $conf['admin_email'] = 'admin@icsccommunity.com';
 
