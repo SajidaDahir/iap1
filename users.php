@@ -14,7 +14,7 @@ try {
     die("DB error: " . $e->getMessage());
 }
 
-$layout->header($conf);
+$ObjLayout->header($conf);
 
 echo "<h2>Registered Users</h2>";
 echo "<ol>"; // ordered (numbered) list
@@ -23,5 +23,5 @@ foreach ($users as $user) {
 }
 echo "</ol>";
 
-$layout->footer($conf);
+$ObjLayout->footer($conf);
 ?>
